@@ -9,11 +9,11 @@
  */
 int main(void)
 {
-	int a;
+	int n;
 
-	srand(time(0));
-	a = rand() - RAND_MAX / 2;
-	if (a > 0)
+	srand(time(NULL));
+	n = rand() % 2 (2 * RAND_MAX) - RAND_MAX;
+	if (n > 0)
 		printf("%d is postive\n", a);
 	else if (a < 0)
 		printf("%d is negative\n", a);
