@@ -1,4 +1,6 @@
-#ifndef __MAIH_H__
-#define __MAIN_H__
+#ifndef MY_HEADER_H
+#define MY_HEADER_H
+
 #define SIZE 1024
-#endif
+
+#endif /* MY_HEADER_H */
