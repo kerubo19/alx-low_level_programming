@@ -1,0 +1,23 @@
+# Makefile
+
+# Name of the executable
+school: main.o student.o teacher.o
+	# Link the object files into the executable
+	gcc -o school main.o student.o teacher.o
+
+# Rule to compile main.c into main.o
+main.o: main.c
+	gcc -c main.c
+
+# Rule to compile student.c into student.o
+student.o: student.c student.h
+	gcc -c student.c
+
+# Rule to compile teacher.c into teacher.o
+teacher.o: teacher.c teacher.h
+	gcc -c teacher.c
+
+# Rule to clean up the object files and the executable
+clean:
+	rm -f *.o school
+
